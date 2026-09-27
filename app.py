@@ -1,2 +1,7 @@
 def authenticate(username, password):
-    pass
+    users = {"admin": "1234"}
+
+    if username in users and users[username] == password:
+        return True
+
+    return False
