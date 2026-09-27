@@ -1,2 +1,5 @@
 def authenticate(username, password):
-    pass
+    if username == "admin" and password == "1234":
+        return "Login successful"
+
+    return "Login failed"
